@@ -1,0 +1,27 @@
+# Python dirs
+__pycache__/
+.venv/
+*.pyc
+
+# Logs
+*.log
+
+# ENV files
+.env
+
+# Docker files
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+
+# IDE
+.vscode
+.idea
+*.swp

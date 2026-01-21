@@ -1,0 +1,18 @@
+# Python dirs
+__pycache__/
+.venv/
+*.pyc
+
+# Logs
+*.log
+
+# ENV files
+.env
+
+# IDE
+.vscode
+.idea
+*.swp
+
+# Git
+.git
