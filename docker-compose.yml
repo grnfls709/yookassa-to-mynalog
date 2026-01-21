@@ -5,8 +5,6 @@ services:
     image: grandvan/yookassa-to-mynalog:latest
     restart: always
     volumes:
-      - ./sync_state.json:/app/sync_state.json
-      - ./sync.log:/app/sync.log
       - ./.env:/app/.env
     environment:
       - PYTHONUNBUFFERED=1
