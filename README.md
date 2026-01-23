@@ -62,7 +62,7 @@ nano .env
 | Переменная | По умолчанию | Описание |
 |-----------|:----------:|---------|
 | `SYNC_START_DATE` | -24ч | Дата начала синхронизации (YYYY-MM-DD) |
-| `INCOME_DESCRIPTION_TEMPLATE` | `Платеж #{order_id}` | Шаблон описания дохода |
+| `INCOME_DESCRIPTION_TEMPLATE` | `Платеж #{description}` | Шаблон описания дохода |
 | `CRON_SCHEDULE` | `0 */4 * * *` | Расписание cron (каждые 4 часа) |
 
 ### Примеры CRON_SCHEDULE
