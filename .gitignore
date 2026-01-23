@@ -5,6 +5,7 @@ __pycache__/
 
 # Logs
 *.log
+sync_state.json
 
 # ENV files
 .env

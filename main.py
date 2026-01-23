@@ -22,7 +22,7 @@ class MoyNalogAPI:
         self.login = login
         self.password = password
         self.token = None
-        # self.device_id = "EKlXkCYMIh28msCCrEHVb"
+        self.device_id = "EKlXkCYMIh28msCCrEHVb"
         self.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
         
         self.headers = {
@@ -49,7 +49,7 @@ class MoyNalogAPI:
             "username": self.login,
             "password": self.password,
             "deviceInfo": {
-                # "sourceDeviceId": self.device_id,
+                "sourceDeviceId": self.device_id,
                 "sourceType": "WEB",
                 "appVersion": "1.0.0",
                 "metaDetails": {
@@ -219,7 +219,7 @@ class SyncManager:
                     payment_date = datetime.fromisoformat(payment.created_at.replace('Z', '+00:00'))
                     
                     description = config.INCOME_DESCRIPTION_TEMPLATE.format(
-                        order_id=payment.metadata.get("order_id", payment.id)
+                        description=payment.description or payment.id
                     )
                     
                     success = await self.nalog.add_income(description, amount, payment_date)
