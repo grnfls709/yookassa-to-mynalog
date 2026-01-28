@@ -33,7 +33,9 @@ body:
     attributes:
       label: Операционная система
       options:
-        - Linux
+        - Debian
+        - Ubuntu
+        - Other Linux
         - Windows
         - MacOS
     validations:
@@ -42,4 +44,5 @@ body:
     attributes:
       label: Логи (вставьте содержимое логов напрямую)
       description: Пожалуйста, предоставьте полный лог при запуске **python main.py** или **docker compose up -d && docker compose logs -ft**
+    validations:
       required: true
