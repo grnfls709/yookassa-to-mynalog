@@ -1,0 +1,39 @@
+name: Запрос фунционала
+title: "[Feature] "
+description: Предложите новый функционал
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Прежде чем создавать проблему, убедитесь в следующем:
+        1. Обязательно укажите краткий и понятный заголовок, чтобы другим было проще найти вашу проблему.
+        2. Убедитесь, что похожая проблема ещё не создана в разделе [существующих проблем](https://github.com/pluralplay/FlClashX/issues?q=is%3Aissue), иначе обсудите свой вопрос там.
+        3. Опишите проблему подробно и по шаблону, иначе заявка будет закрыта без рассмотрения.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание фунции
+      description: Четкое и краткое описание функции
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Сценарий использования
+      description: Пожалуйста, опишите сценарий использования вашего запроса на функцию
+    validations:
+      required: true
+  - type: checkboxes
+    id: os-labels
+    attributes:
+      label: Операционная система
+      description: Пожалуйста, выберите операционную систему(ы), для которых предназначена эта функция (выберите минимум одну)
+      options:
+        - label: Debian
+        - label: Ubuntu
+        - label: Other Linux
+        - label: Windows
+        - label: MacOS
+    validations:
+      required: true
