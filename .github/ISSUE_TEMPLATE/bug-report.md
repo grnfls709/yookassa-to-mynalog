@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Отправьте отчет, чтобы помочь нам исправить баг
-title: ''
+title: "[BUG]"
 labels: ''
 assignees: ''
 
