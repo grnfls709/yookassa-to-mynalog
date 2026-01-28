@@ -140,5 +140,6 @@ docker compose up -d && docker compose logs -f -t
 ---
 
 > **Ставь ⭐** и не пропусти регулярные обновления для поддержания актуальности скрипта и оптимальной автоматизации
+> USDT TRC20: TL6gHETnKqNWV4D6GjiKKahkBsAwcyWfo8
 
 ###### Telegram: [@grand_van](https://t.me/grand_van) ✈
