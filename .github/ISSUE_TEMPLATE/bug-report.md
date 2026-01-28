@@ -1,6 +1,6 @@
 name: Багрепорт / Bug report
 title: "[BUG] "
-description: Сообщите о возникшей проблеме
+description: Сообщите о возникшей проблем / Report the issue you are experiencing
 
 body:
   - type: markdown
@@ -10,28 +10,32 @@ body:
         1. Вы указали четкий и краткий заголовок проблемы, чтобы другие могли быстро её найти.
         2. Вы проверили, что похожей проблемы нет среди [существующих](https://github.com/grnfls709/yookassa-to-mynalog/issues?q=is%3Aissue), в противном случае, обсуждайте её там.
         3. Вы подробно описали проблему, следуя требованиям шаблона, иначе проблема будет закрыта без рассмотрения.
+        ## Before submitting the issue, please make sure of the following checklist:
+        1. Please be sure to fill in a concise and clear title for the issue so that others can quickly search
+        2. Please make sure there is no similar issue in the [existing issues](https://github.com/grnfls709/yookassa-to-mynalog/issues?q=is%3Aissue), otherwise please discuss under the existing issue
+        3. Please describe the problem in detail according to the template specification, otherwise issue will be closed directly.
   - type: textarea
     id: description
     attributes:
-      label: Описание проблемы
-      description: Подробно и ясно опишите возникшую у вас проблему, при возможности приложите скриншоты
+      label: Описание проблемы / Describe the bug
+      description: Подробно и ясно опишите возникшую у вас проблему, при возможности приложите скриншоты / Describe the problem you encountered in detail and clearly, and provide screenshots
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Версия
-      description: Пожалуйста, укажите конкретную версию скрипта yookassa-to-mynalog
+      label: Версия / Version
+      description: Пожалуйста, укажите конкретную версию yookassa-to-mynalog / Please provide the specific version of yookassa-to-mynalog.
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Как воспроизвести
-      description: Опишите шаги для воспроизведения ошибки
+      label: Как воспроизвести / To Reproduce
+      description: Опишите шаги для воспроизведения ошибки / Steps to reproduce the behavior
     validations:
       required: true
   - type: dropdown
     attributes:
-      label: Операционная система
+      label: Операционная система / OS
       options:
         - Android
         - Windows
@@ -41,7 +45,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: Логи (не прикрепляйте файл, вставьте содержимое логов напрямую)
-      description: Пожалуйста, предоставьте полный или соответствующий отладочный лог (для этого введите команду python main.py из тестовой среды или используйте docker compose в серверной среде)
+      label: Логи (не прикрепляйте файл, вставьте содержимое логов напрямую) / Log (Do not upload the log file, paste the log content directly)
+      description: Пожалуйста, предоставьте полный или соответствующий отладочный лог (для этого установите уровень логирования в меню слева ПО-> Настройки-> Уровень логирования-> Debug) / Please provide a complete or relevant Debug log (please adjust it to debug in the left menu of software-> Settings-> Log Level)
     validations:
       required: true
