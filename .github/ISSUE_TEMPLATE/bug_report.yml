@@ -33,10 +33,9 @@ body:
     attributes:
       label: Операционная система
       options:
-        - Linux Debian
-        - Linux Ubuntu
+        - Linux
         - Windows
-        - Docker Compose
+        - MacOS
     validations:
       required: true
   - type: textarea
